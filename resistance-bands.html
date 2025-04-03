@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resistance Bands - GET IT DONE</title>
+    <style>
+        body {
+            background: #000;
+            color: #0ff;
+            font-family: 'Press Start 2P', 'Courier New', monospace;
+            margin: 0;
+            overflow-x: hidden;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        @font-face {
+            font-family: 'ArcadeClassic';
+            src: url('ArcadeClassic.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                to bottom,
+                rgba(0, 255, 255, 0.8) 0%,
+                rgba(255, 0, 255, 0.8) 20%,
+                rgba(255, 255, 0, 0.8) 40%,
+                rgba(0, 0, 0, 0) 60%
+            );
+            background-size: 100% 200%;
+            animation: fallLines 5s linear infinite;
+            z-index: -1;
+        }
+
+        @keyframes fallLines {
+            0% { background-position: 0 -100%; }
+            100% { background-position: 0 100%; }
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'ArcadeClassic', sans-serif;
+            font-size: 12vw;
+            max-width: 100%;
+            text-transform: uppercase;
+            color: #0ff;
+            text-shadow: 0 0 15px #0ff, 0 0 30px #f0f, 0 0 45px #ff0;
+            margin: 30px 0;
+            animation: neonCycle 3s infinite alternate, glow 1s infinite alternate;
+        }
+
+        @keyframes neonCycle {
+            0% { color: #0ff; text-shadow: 0 0 15px #0ff, 0 0 30px #f0f, 0 0 45px #ff0; }
+            50% { color: #f0f; text-shadow: 0 0 15px #f0f, 0 0 30px #ff0, 0 0 45px #0ff; }
+            100% { color: #ff0; text-shadow: 0 0 15px #ff0, 0 0 30px #0ff, 0 0 45px #f0f; }
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 15px currentColor, 0 0 30px #f0f, 0 0 45px #0ff; }
+            to { text-shadow: 0 0 30px currentColor, 0 0 45px #f0f, 0 0 60px #ff0; }
+        }
+
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 192px;
+            }
+        }
+
+        .content {
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            padding: 20px;
+            background: #111;
+            border: 4px solid #f0f;
+            box-shadow: 0 0 20px #f0f;
+            font-size: 14px;
+            line-height: 1.4;
+            color: #0ff;
+            text-align: left;
+        }
+
+        h2 {
+            color: #ff0;
+            text-shadow: 0 0 8px #ff0;
+            margin: 20px 0 10px;
+            font-size: 16px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        .social-links {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .social-btn {
+            display: inline-block;
+            width: 64px;
+            height: 64px;
+            margin: 0 10px;
+            text-decoration: none;
+            background-size: contain;
+            background-repeat: no-repeat;
+            transition: transform 0.3s;
+        }
+
+        .social-btn:hover {
+            transform: scale(1.2);
+        }
+
+        @media (max-width: 767px) {
+            h1 {
+                font-size: 10vw;
+            }
+
+            .content {
+                width: 90%;
+                font-size: 12px;
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 14px;
+            }
+
+            .social-btn {
+                width: 48px;
+                height: 48px;
+            }
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    </style>
+</head>
+<body>
+    <h1>Resistance Bands</h1>
+    <div class="content">
+        <p>The Fit Simplify Resistance Bands set includes five loop bands with varying resistance levels, from extra light to extra heavy, plus a carry bag and guide. Made of durable latex, they’re perfect for strength training, stretching, or rehab. Lightweight and portable, they suit home or travel workouts for all fitness levels.</p>
+        <h2>Pros:</h2>
+        <ul>
+            <li>Versatile for multiple exercises.</li>
+            <li>Durable, snap-resistant latex.</li>
+            <li>Portable with included bag.</li>
+        </ul>
+        <h2>Cons:</h2>
+        <ul>
+            <li>Can roll up during use.</li>
+            <li>Latex may irritate sensitive skin.</li>
+            <li>Resistance levels not labeled.</li>
+        </ul>
+    </div>
+    <div class="social-links">
+        <a href="https://x.com/GETITDONE_25" target="_blank" class="social-btn" style="background-image: url('x-logo.png');" title="Follow on X"></a>
+        <a href="https://rumble.com/c/c-7682877" target="_blank" class="social-btn" style="background-image: url('rumble-logo.png');" title="Watch on Rumble"></a>
+    </div>
+</body>
+</html>
