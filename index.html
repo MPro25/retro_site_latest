@@ -64,7 +64,7 @@
 
         h1 {
             text-align: center;
-            font-family: 'ArcadeClassic', sans-serif;
+            font-family: 'ArcadeClassic', 'Courier New', monospace; /* Added fallback font */
             font-size: 12vw;
             max-width: 100%;
             text-transform: uppercase;
@@ -223,6 +223,8 @@
             text-decoration: none;
             background-size: contain;
             background-repeat: no-repeat;
+            background-position: center;
+            object-fit: contain; /* Ensure logos scale properly */
             transition: transform 0.3s;
         }
 
@@ -272,6 +274,9 @@
             .social-btn {
                 width: 48px;
                 height: 48px;
+                background-size: contain; /* Ensure consistent scaling on mobile */
+                background-position: center;
+                object-fit: contain;
             }
         }
 
@@ -301,7 +306,7 @@
         <div class="product">
             <div class="product-title">Fitness Home Gym Mat - Workout Floor Protection for Treadmill, Bike, Yoga, or Standing Desk</div>
             <div class="iframe-container">
-                <iframeI src="https://rumble.com/embed/v6pf0sh/?pub=4l56c7" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://rumble.com/embed/v6pf0sh/?pub=4l56c7" frameborder="0" allowfullscreen></iframe>
             </div>
             <a href="https://amzn.to/3DTLTJL" target="_blank" class="btn">Grab it on Amazon</a>
             <a href="gym-mat.html" target="_blank" class="btn">READ MORE</a>
